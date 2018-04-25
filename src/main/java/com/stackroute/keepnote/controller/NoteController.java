@@ -10,11 +10,11 @@ public class NoteController {
 	 * From the problem statement, we can understand that the application
 	 * requires us to implement the following functionalities.
 	 * 
-	 * 1. display the list of existing notes from the persistence data. Each note 
+	 * 1. display the list of existing notes from the collection. Each note 
 	 *    should contain Note Id, title, content, status and created date.
 	 * 2. Add a new note which should contain the note id, title, content and status.
-	 * 3. Delete an existing note
-	 * 
+	 * 3. Delete an existing note.
+	 * 4. Update an existing note.
 	 */
 	
 	/* 
