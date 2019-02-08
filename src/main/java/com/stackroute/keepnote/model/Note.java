@@ -14,50 +14,62 @@ public class Note {
 	 * the user but should be always initialized with the system date
 	 */
 
+	private int noteId;
+
+	private String noteTitle;
+
+	private String noteContent;
+
+	private String noteStatus;
+
+	private LocalDateTime createdAt;
+
 	public Note() {
 	}
 
-	/* All the getters/setters definition should be implemented here */
-
-	public int getNoteId() {
-		return 0;
-
+	public Note(int noteId, String noteTitle, String noteContent, String noteStatus) {
+		super();
+		this.noteId = noteId;
+		this.noteTitle = noteTitle;
+		this.noteContent = noteContent;
+		this.noteStatus = noteStatus;
 	}
 
-	public void setNoteId(int intid) {
+	/* All the getters/setters definition should be implemented here */
+	public int getNoteId() {
+		return noteId;
+	}
 
+	public void setNoteId(int noteId) {
+		this.noteId = noteId;
 	}
 
 	public String getNoteTitle() {
-		return null;
+		return noteTitle;
 	}
 
-	public void setNoteTitle(String string) {
-
+	public void setNoteTitle(String noteTitle) {
+		this.noteTitle = noteTitle;
 	}
 
 	public String getNoteContent() {
-		return null;
+		return noteContent;
 	}
 
-	public void setNoteContent(String string) {
-
+	public void setNoteContent(String noteContent) {
+		this.noteContent = noteContent;
 	}
 
 	public String getNoteStatus() {
-		return null;
+		return noteStatus;
 	}
 
-	public void setNoteStatus(String string) {
-
+	public void setNoteStatus(String noteStatus) {
+		this.noteStatus = noteStatus;
 	}
 
 	public LocalDateTime getCreatedAt() {
-		return null;
-	}
-
-	public void setCreatedAt(LocalDateTime localdatetime) {
-
+		return LocalDateTime.now();
 	}
 
 	/* Override the toString() method */
@@ -66,4 +78,5 @@ public class Note {
 	public String toString() {
 		return null;
 	}
+
 }

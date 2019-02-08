@@ -28,6 +28,12 @@
 		</dependency>
 
 		<!-- Dependency for JSTL to be added -->
+		<dependency>
+			<groupId>jstl</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+		
 		
 		<!-- Dependency for jaxb-api to be added(if using JDK9) -->
 
